@@ -1,0 +1,11 @@
+Bundle-Version: 1.0.0.${tstamp}
+Export-Package:  \
+	org.greenscape.core.model
+javac.source: 1.8
+javac.target:1.8
+Include-Resource: META-INF=config
+GS-Model: org.greenscape.core.model.Organization,org.greenscape.core.model.Permission,org.greenscape.core.model.RoleEntity,org.greenscape.core.model.UserEntity,org.greenscape.core.model.Site,org.greenscape.core.model.SiteTemplate,org.greenscape.core.model.Page,org.greenscape.core.model.Pagelet
+GS-Resource: META-INF/resources.json
+-buildpath:  \
+	org.greenscape.core;version=latest,\
+	junit.osgi
